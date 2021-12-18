@@ -107,6 +107,10 @@ input[type="submit"]:hover {
     background-color: #0077B5;
 }
 
+.fa-google {
+    background-color: #000000;
+}
+
 #register-container p{
     margin-bottom: 10px;
 }
