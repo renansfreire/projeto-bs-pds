@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betting Sports</title>
+    <link rel="stylesheet" href="image/icon.png">
+    <script src="https://kit.fontawesome.com/3f3417947e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <div id="register-container">
+        <h1>Betting Sports - Registrar</h1>
+        <form id="register-form">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email aqui">
+            </div>
+            <div>
+                <label for="name">Nome</label>
+                <input type="name" name="name" id="name" placeholder="Digite seu nome aqui">
+            </div>
+            <div>
+                <label for="lastname">Sobrenome</label>
+                <input type="lastname" name="lastname" id="lastname" placeholder="Digite seu sobrenome aqui">
+            </div>
+            <div>
+                <label for="cpf">CPF</label>
+                <input type="cpf" name="cpf" id="cpf" placeholder="___.___.___-__">
+            </div>
+            <div>
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+            </div>
+            <div>
+                <label for="password">Confirmação de senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite novamente sua senha">
+            </div>
+            <div>
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" id="agreement-label">Eu li e aceito os <a href="terms.html" target="_blank">termos de uso</a></label>
+            </div>
+            <div>
+                <input type="submit" id="btn-submit" value="Registrar">
+            </div>
+            <div id="social-container">
+                <p>Ou registre-se através suas redes sociais</p>
+                <i class="fa fa-facebook-square face__modify"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-google google_modify" aria-hidden="true"></i>
+            </div>
+        </form>
+        <div id="login-container">
+            <p>Já possui cadastro?<a href="login.html"> Faça login</a></p>
+        </div>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
