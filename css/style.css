@@ -127,11 +127,69 @@ section h1{
     display: inline;
     margin-left: 82px;
     margin-top: 43px;
-    margin-right: 433px;
+    margin-right: 380px;
 }
 
 section p {
     display: inline-flex;
     justify-content: space-between;
-    width: 400px;
+    width: 300px;
+
+}
+
+div .box-matcher {
+    background-color: #4F4F4F;
+    padding: 10px;
+    text-align: center;
+}
+
+#matcher {
+    display: inline-block;
+    text-align: center;
+    margin-right: 50px;
+}
+
+#minute{
+    display: inline-block;
+    width: 100px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+#results{
+    display: inline-block;
+    margin-left: 10%;
+}
+
+#price{
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin-left: 50px;
+}
+
+div #price p {
+    background-color: #666;
+    padding: 20px;
+    display: inline-block;
+    justify-content: space-between;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+div #price p:hover {
+    transition: 0.4s;
+    border: 1px solid #FFF;
+    background-color: #EBEF12;
+    color: #000;
+}
+
+#live {
+    margin-left: 20px;
+    background-color: red;
+    height: auto;
+    width: 60px;
+    padding: 1px;
+    border-radius: 5px;
+    text-align: center;
 }
