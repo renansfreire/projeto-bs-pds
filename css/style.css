@@ -118,3 +118,20 @@ nav:after{
     text-decoration: none;
     color: #FFF;
 }
+
+section{
+    text-align: center;
+}
+
+section h1{
+    display: inline;
+    margin-left: 82px;
+    margin-top: 43px;
+    margin-right: 433px;
+}
+
+section p {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 400px;
+}
