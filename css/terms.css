@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 3vh  ;
+}
+
+.text-term {
+    margin-left: 50px;
+    width: 90%;
+    height: auto;
+    text-align: justify;
+}
+
+div p {
+    margin-bottom: 10px;
+}
