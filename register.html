@@ -12,30 +12,30 @@
 <body>
     <div id="register-container">
         <h1>Betting Sports - Registrar</h1>
-        <form id="register-form">
+        <form method="POST" action="php/cadastro.php">
             <div>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu email aqui">
+                <input type="email" name="txt_email" id="email" placeholder="Digite seu email aqui">
             </div>
             <div>
                 <label for="name">Nome</label>
-                <input type="name" name="name" id="name" placeholder="Digite seu nome aqui">
+                <input type="name" name="txt_name" id="name" placeholder="Digite seu nome aqui">
             </div>
             <div>
                 <label for="lastname">Sobrenome</label>
-                <input type="lastname" name="lastname" id="lastname" placeholder="Digite seu sobrenome aqui">
+                <input type="lastname" name="txt_lastname" id="lastname" placeholder="Digite seu sobrenome aqui">
             </div>
             <div>
                 <label for="cpf">CPF</label>
-                <input type="cpf" name="cpf" id="cpf" placeholder="___.___.___-__">
+                <input type="cpf" name="txt_cpf" id="cpf" placeholder="___.___.___-__" size = "12">
             </div>
             <div>
                 <label for="password">Senha</label>
-                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                <input type="password" name="txt_password" id="password" placeholder="Digite sua senha">
             </div>
             <div>
-                <label for="password">Confirmação de senha</label>
-                <input type="password" name="password" id="password" placeholder="Digite novamente sua senha">
+                <label for="conf_password">Confirmação de senha</label>
+                <input type="password" name="conf_password" id="conf_password" placeholder="Digite novamente sua senha">
             </div>
             <div>
                 <input type="checkbox" name="agreement" id="agreement">

@@ -12,11 +12,11 @@
 <body>
     <div id="login-container">
         <h1>Betting Sports</h1>
-        <form action="">
+        <form method="POST" action="php/login.php">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Digite aqui seu email" autocomplete="off">
+            <input type="email" name="txt_email" id="email" placeholder="Digite aqui seu email" autocomplete="off">
             <label for="password">Senha</label>
-            <input type="password" name="password" id="password" placeholder="Digite aqui sua senha">
+            <input type="password" name="txt_password" id="password" placeholder="Digite aqui sua senha">
             <a href="#" id="forgot-pass">Esqueceu a senha?</a>
             <input type="submit" value="Login">
         </form>
