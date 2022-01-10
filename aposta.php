@@ -1,3 +1,19 @@
+<?php
+
+require_once("php/conexao.php");
+$sql_game = "SELECT *FROM tb_game WHERE id_game = 1;";
+$result = mysqli_query($conection, $sql_game);
+
+if (mysqli_num_rows($result)!=0){
+    while($row = mysqli_fetch_assoc($result)){
+        $nome_jogo = $row['nome_game'];
+        $montante_a = $row['mont_a'];
+        $montante_empate = $row['mont_empate'];
+        $montante_b = $row['mont_b'];
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,22 +27,22 @@
     <div>
         <div class="container-results-jogo">
             <div>
-                <h2>Flamengo x Palmeiras</h2>
+                <h2><?php echo $nome_jogo?></h2>
             </div>
             <div>
                 <p>Resultado Final</p>
                 <div class="case-opcoes-apostas">
                     <div id="casa" class="case-produto" onclick="escolheCasa()">
                         <h4 class="time-name">Time 1</h4>
-                        <p class="preco">--</p>
+                        <p class="preco"><?php echo $montante_a?></p>
                     </div>
                     <div id="empate" class="case-produto" onclick="escolheEmpate()">
                         <h4 class="time-name">Empate</h4>
-                        <p class="preco">--</p>
+                        <p class="preco"><?php echo $montante_empate?></p>
                     </div>
                     <div id="fora" class="case-produto" onclick="escolheFora()">
                         <h4 class="time-name">Time 2</h4>
-                        <p class="preco">--</p>
+                        <p class="preco"><?php echo $montante_b?></p>
                     </div>
                 </div>
             </div>
