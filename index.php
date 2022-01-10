@@ -1,3 +1,13 @@
+<?php
+session_start();
+$logged = $_SESSION['logged'] ?? NULL;
+if (!$logged) die (" <script> alert('Usuário não registrado.');
+
+window.location.href = 'login.html';
+
+</script>")
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,8 +28,8 @@
                         <li><a href="#">Jogos</a></li>
                         <li><a href="#">Ao Vivo</a></li>
                         <li class="btn">
-                            <button class="btn-register"><a href="#">Registrar</a></button>
-                            <button class="btn-login"><a href="login.html">Login</a></button>
+                            <button class="btn-register"><a href="?logout=1">Logout</a></button>
+                            <button class="btn-login"><a href="login.html"><?php echo $_SESSION['email']?></a></button>
                         </li>
                     </ul>
                 </div>
