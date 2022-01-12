@@ -15,6 +15,7 @@ window.location.href = 'login.html';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/aposta.css" type="text/css" rel="stylesheet">
     <title>Betting Sports</title>
     <link rel="icon" href="image/icon.png">
 </head>
@@ -29,7 +30,7 @@ window.location.href = 'login.html';
                         <li><a href="#">Ao Vivo</a></li>
                         <li class="btn">
                             <button class="btn-register"><a href="?logout=1">Logout</a></button>
-                            <button class="btn-login"><a href="login.html"><?php echo $_SESSION['email']?></a></button>
+                            <button class="btn-login"><a href="login.html">Login<?php echo $_SESSION['email']?></a></button>
                         </li>
                     </ul>
                 </div>
@@ -40,29 +41,62 @@ window.location.href = 'login.html';
         </header>
         <section>
             <h1>Futebol</h1>
-            <p>1<span>X</span>2</p>
         </section>
-        <div class="box-matcher">
-            <div id="matcher">
-                <p>Real Madrid </p>
-                <p>x</p>
-                <p>Vasco da Gama</p>
+        <div class="case-box-matchers">
+            <div id="jogo" class="case-produto">
+                <a href="aposta.html">
+                    <h4 class="time-name" >Time 1</h4>
+                    <h4 class="time-name" >X</h4>
+                    <h4 class="time-name" >Time 2</h4>
+                </a>
             </div>
-            <div id="minute">
-                <p>75'</p>
-                <p id="live">ao vivo</p>
+            <div id="tempo" class="case-produto">
+                <h5>Tempo</h5>
+                <p class="minute">--</p>
+                <h5 id="status">status</h5>
             </div>
-            <div id="results">
-                <p>7</p>
-                <p>x</p>
-                <p>1</p>
+            <div id="casa" class="case-produto" onclick="escolheCasa()">
+                <h4 class="time-name">Casa</h4>
+                <p class="preco"><?php echo $montante_a?></p>
             </div>
-            <div id="price">
-                <p>1.01</p>
-                <p>26.5</p>
-                <p>251.5</p>
+            <div id="empate" class="case-produto" onclick="escolheEmpate()">
+                <h4 class="time-name">Empate</h4>
+                <p class="preco"><?php echo $montante_empate?></p>
+            </div>
+            <div id="fora" class="case-produto" onclick="escolheFora()">
+                <h4 class="time-name">Fora</h4>
+                <p class="preco"><?php echo $montante_b?></p>
+            </div>
+        </div>
+        <div class="case-box-matchers">
+            <div id="jogo" class="case-produto">
+                <a href="aposta.html">
+                    <h4 class="time-name" >Time 1</h4>
+                    <h4 class="time-name" >X</h4>
+                    <h4 class="time-name" >Time 2</h4>
+                </a>
+            </div>
+            <div id="tempo" class="case-produto">
+                <h5>Tempo</h5>
+                <p class="minute">--</p>
+                <h5 id="status">status</h5>
+            </div>
+            <div id="casa1" class="case-produto" onclick="escolheCasa1()">
+                <h4 class="time-name">Casa</h4>
+                <p class="preco"><?php echo $montante_a?></p>
+            </div>
+            <div id="empate1" class="case-produto" onclick="escolheEmpate1()">
+                <h4 class="time-name">Empate</h4>
+                <p class="preco"><?php echo $montante_empate?></p>
+            </div>
+            <div id="fora1" class="case-produto" onclick="escolheFora1()">
+                <h4 class="time-name">Fora</h4>
+                <p class="preco"><?php echo $montante_b?></p>
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="aposta.js"></script>
+
 </body>
 </html>
