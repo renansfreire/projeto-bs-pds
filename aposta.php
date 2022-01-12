@@ -53,9 +53,9 @@ if (mysqli_num_rows($result)!=0){
                     <div class="case-select-qt-casa">
                         <h4 class="time-name-casa">Time 1</h4>
                         <div class="case-opcoes-qt-gols">
-                            <div class="case-qt-gols"><button>-</button></div>
-                            <div class="case-qt-gols">0</div>
-                            <div class="case-qt-gols"><button>+</button></div>
+                            <input type="button" name="menos" id="menos" value="-" />
+                            <input type="text" name="format" value="0" id="format" disabled="" size="2" />
+                            <input type="button" name="mais" id="mais" value="+" />
                         </div>
                     </div>
                     <div class="case-select-qt-fora">
@@ -66,10 +66,17 @@ if (mysqli_num_rows($result)!=0){
                     <div class="case-select-qt-fora">
                         <h4 class="time-name-fora">Time 2</h4>
                         <div class="case-opcoes-qt-gols">
-                            <div class="case-qt-gols"><button>-</button></div>
-                            <div class="case-qt-gols">0</div>
-                            <div class="case-qt-gols"><button>+</button></div>
+                            <input type="button" name="menos2" id="menos2" value="-" />
+                            <input type="text" name="format2" value="0" id="format2" disabled="" size="2" />
+                            <input type="button" name="mais2" id="mais2" value="+" />
                         </div>
+                    </div>
+                    <div class="case-select-qt-details" id="#case-value-aposta">
+                        <input type="text" name="valor-aposta" value="" id="valor-aposta" size="2" />
+                        
+                        <input type="submit" name="finalizar" id="finalizar" value="calcular">
+                        <br>
+                        Possível retorno: <br><input type="text" name="total" id="total" disabled="" value="" style="width:75px;font-size: 16px"  />
                     </div>
                     <div class="btn-salvar-aposta-gols">
                         <button><a id="btn-salvar-modal" href="#abrirModal">Salvar</a></button>
@@ -87,7 +94,6 @@ if (mysqli_num_rows($result)!=0){
             </div>
         </div>
     </div>
-
     <script type="text/javascript" src="aposta.js"></script>
 </body>
 </html>
