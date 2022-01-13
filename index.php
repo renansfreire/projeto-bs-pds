@@ -44,7 +44,7 @@ window.location.href = 'login.html';
         </section>
         <div class="case-box-matchers">
             <div id="jogo" class="case-produto">
-                <a href="aposta.html">
+                <a href="aposta.php">
                     <h4 class="time-name" >Time 1</h4>
                     <h4 class="time-name" >X</h4>
                     <h4 class="time-name" >Time 2</h4>
@@ -70,7 +70,7 @@ window.location.href = 'login.html';
         </div>
         <div class="case-box-matchers">
             <div id="jogo" class="case-produto">
-                <a href="aposta.html">
+                <a href="aposta.php">
                     <h4 class="time-name" >Time 1</h4>
                     <h4 class="time-name" >X</h4>
                     <h4 class="time-name" >Time 2</h4>
